@@ -1,107 +1,101 @@
 0 silly argv {
 0 silly argv   _: [ 'publish' ],
-0 silly argv   registry: 'https://registry.npmjs.org',
+0 silly argv   registry: 'http://10.5.24.14:7001/',
 0 silly argv   composed: 'publish',
 0 silly argv   lernaVersion: '6.0.3',
-0 silly argv   '$0': '/Users/suju/MyProject/zj-demo/node_modules/.bin/lerna'
+0 silly argv   '$0': '/Users/suju/MyProject/demo-d/node_modules/.bin/lerna'
 0 silly argv }
 1 notice cli v6.0.3
-2 verbose rootPath /Users/suju/MyProject/zj-demo
-3 verbose session 6fa646aee9633cce
+2 verbose rootPath /Users/suju/MyProject/demo-d
+3 verbose session 60d94664dec792cc
 4 verbose user-agent lerna/6.0.3/node@v16.12.0+arm64 (darwin)
 5 silly argv {
 5 silly argv   _: [ 'publish' ],
-5 silly argv   registry: 'https://registry.npmjs.org',
+5 silly argv   registry: 'http://10.5.24.14:7001/',
 5 silly argv   composed: 'publish',
 5 silly argv   lernaVersion: '6.0.3'
 5 silly argv }
-6 verbose rootPath /Users/suju/MyProject/zj-demo
-7 info current version 5.0.5
+6 verbose rootPath /Users/suju/MyProject/demo-d
+7 info current version 5.0.8
 8 silly isAnythingCommitted
 9 verbose isAnythingCommitted 1
 10 silly getCurrentBranch
-11 verbose currentBranch main
+11 verbose currentBranch test
 12 silly remoteBranchExists
 13 silly isBehindUpstream
-14 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 0
+14 silly isBehindUpstream test is behind origin/test by 0 commit(s) and ahead by 0
 15 silly hasTags
-16 verbose hasTags true
-17 silly git-describe.sync "v5.0.5-2-g39672a4" => {"lastTagName":"v5.0.5","lastVersion":"v5.0.5","refCount":"2","sha":"39672a4","isDirty":false}
-18 info Looking for changed packages since v5.0.5
-19 silly checking diff packages/basic-component
-20 silly found diff in packages/basic-component/package.json
-20 silly found diff in packages/basic-component/src/Button/index.tsx
-21 verbose filtered diff [
-21 verbose filtered diff   'packages/basic-component/package.json',
-21 verbose filtered diff   'packages/basic-component/src/Button/index.tsx'
-21 verbose filtered diff ]
-22 verbose updated @zj-demo/basic-component
-23 verbose git-describe undefined => "v5.0.5-2-g39672a4"
-24 silly git-describe parsed => {"lastTagName":"v5.0.5","lastVersion":"v5.0.5","refCount":"2","sha":"39672a4","isDirty":false}
-25 info execute Skipping releases
-26 silly lifecycle No script for "preversion" in "zj-demo", continuing
-27 silly lifecycle No script for "preversion" in "@zj-demo/basic-component", continuing
-28 verbose version @zj-demo/basic-component has no lockfile. Skipping lockfile update.
-29 silly lifecycle No script for "version" in "@zj-demo/basic-component", continuing
-30 silly lifecycle No script for "version" in "zj-demo", continuing
-31 silly gitAdd [ 'packages/basic-component/package.json', 'lerna.json' ]
-32 silly gitCommit v5.0.6
-33 verbose git [ 'commit', '-m', 'v5.0.6' ]
-34 silly gitTag v5.0.6
-35 verbose git [ 'tag', 'v5.0.6', '-m', 'v5.0.6' ]
-36 silly lifecycle No script for "postversion" in "@zj-demo/basic-component", continuing
-37 silly lifecycle No script for "postversion" in "zj-demo", continuing
-38 info git Pushing tags...
-39 silly gitPush origin main
-40 info publish Publishing packages to npm...
-41 notice Skipping all user and access validation due to third-party registry
-42 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
-43 warn ENOLICENSE Package @zj-demo/basic-component is missing a license.
-43 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
-43 warn ENOLICENSE See https://choosealicense.com for additional guidance.
-44 silly getCurrentSHA
-45 verbose getCurrentSHA a2fe4a888c2867a4f88bde5434cb92591695bb93
-46 silly lifecycle No script for "prepublish" in "zj-demo", continuing
-47 silly lifecycle No script for "prepare" in "zj-demo", continuing
-48 silly lifecycle No script for "prepublishOnly" in "zj-demo", continuing
-49 silly lifecycle No script for "prepack" in "zj-demo", continuing
-50 verbose pack-directory packages/basic-component
-51 silly lifecycle No script for "prepublish" in "@zj-demo/basic-component", continuing
-52 silly lifecycle No script for "prepare" in "@zj-demo/basic-component", continuing
-53 silly lifecycle No script for "prepublishOnly" in "@zj-demo/basic-component", continuing
-54 silly lifecycle No script for "prepack" in "@zj-demo/basic-component", continuing
-55 silly lifecycle No script for "postpack" in "@zj-demo/basic-component", continuing
-56 verbose packed packages/basic-component
-57 silly lifecycle No script for "postpack" in "zj-demo", continuing
-58 verbose publish @zj-demo/basic-component
-59 silly FetchError: request to https://registry.npmjs.org/@zj-demo%2fbasic-component failed, reason: connect ETIMEDOUT 104.16.22.35:443
-59 silly     at ClientRequest.<anonymous> (/Users/suju/MyProject/zj-demo/node_modules/minipass-fetch/lib/index.js:130:14)
-59 silly     at ClientRequest.emit (node:events:390:28)
-59 silly     at TLSSocket.socketErrorListener (node:_http_client:447:9)
-59 silly     at TLSSocket.emit (node:events:402:35)
-59 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
-59 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
-59 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21)
-59 silly  FetchError: request to https://registry.npmjs.org/@zj-demo%2fbasic-component failed, reason: connect ETIMEDOUT 104.16.22.35:443
-59 silly     at ClientRequest.<anonymous> (/Users/suju/MyProject/zj-demo/node_modules/minipass-fetch/lib/index.js:130:14)
-59 silly     at ClientRequest.emit (node:events:390:28)
-59 silly     at TLSSocket.socketErrorListener (node:_http_client:447:9)
-59 silly     at TLSSocket.emit (node:events:402:35)
-59 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
-59 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
-59 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21) {
-59 silly   code: 'ETIMEDOUT',
-59 silly   errno: 'ETIMEDOUT',
-59 silly   syscall: 'connect',
-59 silly   address: '104.16.22.35',
-59 silly   port: 443,
-59 silly   type: 'system'
-59 silly }
-60 error ETIMEDOUT request to https://registry.npmjs.org/@zj-demo%2fbasic-component failed, reason: connect ETIMEDOUT 104.16.22.35:443
-61 error FetchError: request to https://registry.npmjs.org/@zj-demo%2fbasic-component failed, reason: connect ETIMEDOUT 104.16.22.35:443
-61 error     at ClientRequest.<anonymous> (/Users/suju/MyProject/zj-demo/node_modules/minipass-fetch/lib/index.js:130:14)
-61 error     at ClientRequest.emit (node:events:390:28)
-61 error     at TLSSocket.socketErrorListener (node:_http_client:447:9)
-61 error     at TLSSocket.emit (node:events:402:35)
-61 error     at emitErrorNT (node:internal/streams/destroy:157:8)
-61 error     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+16 verbose hasTags false
+17 info Assuming all packages changed
+18 verbose updated @zj-demo/basic-component
+19 verbose git-describe undefined => "dd7a80b"
+20 silly git-describe parsed => {"refCount":"2","sha":"dd7a80b","isDirty":false}
+21 info execute Skipping releases
+22 silly lifecycle No script for "preversion" in "demo-d", continuing
+23 silly lifecycle No script for "preversion" in "@zj-demo/basic-component", continuing
+24 verbose version @zj-demo/basic-component has no lockfile. Skipping lockfile update.
+25 silly lifecycle No script for "version" in "@zj-demo/basic-component", continuing
+26 silly lifecycle No script for "version" in "demo-d", continuing
+27 silly version Successfully applied prettier to updated file: packages/basic-component/package.json
+28 silly version Successfully applied prettier to updated file: lerna.json
+29 silly gitAdd [ 'packages/basic-component/package.json', 'lerna.json' ]
+30 silly gitCommit v5.0.9
+31 verbose git [ 'commit', '-m', 'v5.0.9' ]
+32 silly gitTag v5.0.9
+33 verbose git [ 'tag', 'v5.0.9', '-m', 'v5.0.9' ]
+34 silly lifecycle No script for "postversion" in "@zj-demo/basic-component", continuing
+35 silly lifecycle No script for "postversion" in "demo-d", continuing
+36 info git Pushing tags...
+37 silly gitPush origin test
+38 info publish Publishing packages to npm...
+39 notice Skipping all user and access validation due to third-party registry
+40 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+41 warn ENOLICENSE Package @zj-demo/basic-component is missing a license.
+41 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+41 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+42 silly getCurrentSHA
+43 verbose getCurrentSHA 02f428d048e9558fee2f0d9cd40f7e42b63d2dbd
+44 silly lifecycle No script for "prepublish" in "demo-d", continuing
+45 silly lifecycle No script for "prepare" in "demo-d", continuing
+46 silly lifecycle No script for "prepublishOnly" in "demo-d", continuing
+47 silly lifecycle No script for "prepack" in "demo-d", continuing
+48 verbose pack-directory packages/basic-component
+49 silly lifecycle No script for "prepublish" in "@zj-demo/basic-component", continuing
+50 silly lifecycle No script for "prepare" in "@zj-demo/basic-component", continuing
+51 silly lifecycle No script for "prepublishOnly" in "@zj-demo/basic-component", continuing
+52 silly lifecycle No script for "prepack" in "@zj-demo/basic-component", continuing
+53 silly lifecycle No script for "postpack" in "@zj-demo/basic-component", continuing
+54 verbose packed packages/basic-component
+55 silly lifecycle No script for "postpack" in "demo-d", continuing
+56 verbose publish @zj-demo/basic-component
+57 silly FetchError: request to http://10.5.24.14:7001/@zj-demo%2fbasic-component failed, reason: connect ECONNREFUSED 10.5.24.14:7001
+57 silly     at ClientRequest.<anonymous> (/Users/suju/MyProject/demo-d/node_modules/minipass-fetch/lib/index.js:130:14)
+57 silly     at ClientRequest.emit (node:events:390:28)
+57 silly     at Socket.socketErrorListener (node:_http_client:447:9)
+57 silly     at Socket.emit (node:events:402:35)
+57 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
+57 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+57 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+57 silly  FetchError: request to http://10.5.24.14:7001/@zj-demo%2fbasic-component failed, reason: connect ECONNREFUSED 10.5.24.14:7001
+57 silly     at ClientRequest.<anonymous> (/Users/suju/MyProject/demo-d/node_modules/minipass-fetch/lib/index.js:130:14)
+57 silly     at ClientRequest.emit (node:events:390:28)
+57 silly     at Socket.socketErrorListener (node:_http_client:447:9)
+57 silly     at Socket.emit (node:events:402:35)
+57 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
+57 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+57 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+57 silly   code: 'ECONNREFUSED',
+57 silly   errno: 'ECONNREFUSED',
+57 silly   syscall: 'connect',
+57 silly   address: '10.5.24.14',
+57 silly   port: 7001,
+57 silly   type: 'system'
+57 silly }
+58 error ECONNREFUSED request to http://10.5.24.14:7001/@zj-demo%2fbasic-component failed, reason: connect ECONNREFUSED 10.5.24.14:7001
+59 error FetchError: request to http://10.5.24.14:7001/@zj-demo%2fbasic-component failed, reason: connect ECONNREFUSED 10.5.24.14:7001
+59 error     at ClientRequest.<anonymous> (/Users/suju/MyProject/demo-d/node_modules/minipass-fetch/lib/index.js:130:14)
+59 error     at ClientRequest.emit (node:events:390:28)
+59 error     at Socket.socketErrorListener (node:_http_client:447:9)
+59 error     at Socket.emit (node:events:402:35)
+59 error     at emitErrorNT (node:internal/streams/destroy:157:8)
+59 error     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
