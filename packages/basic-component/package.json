@@ -1,0 +1,32 @@
+{
+  "name": "@zj-demo/basic-component",
+  "version": "5.0.8",
+  "description": "> TODO: description",
+  "author": "suju <274813601@qq.com>",
+  "homepage": "https://github.com/zyz19951225/zj-demo#readme",
+  "license": "ISC",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.ems.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://10.5.24.14:7001/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyz19951225/zj-demo.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@zj-demo/basic-component.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/zyz19951225/zj-demo/issues"
+  },
+  "gitHead": "a2fe4a888c2867a4f88bde5434cb92591695bb93"
+}
