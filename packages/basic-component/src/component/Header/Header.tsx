@@ -7,6 +7,8 @@ type User = {
   name: string;
 };
 
+
+
 interface HeaderProps {
   user?: User;
   onLogin: () => void;
