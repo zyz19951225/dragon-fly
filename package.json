@@ -27,7 +27,6 @@
   "lint-staged": {
     "packages/**/*.scss": "stylelint --fix"
   },
-  "type": "module",
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@babel/preset-env": "^7.20.2",
